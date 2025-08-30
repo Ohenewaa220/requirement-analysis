@@ -1,102 +1,83 @@
-# requirement-analysis
 # Requirement Analysis in Software Development
 
 ## Introduction
-This repository is dedicated to documenting and understanding **Requirement Analysis** in software development.  
-Requirement analysis is the process of gathering, analyzing, and defining what a software system should do.  
-The goal of this repository is to provide notes, examples, and resources that explain how requirement analysis helps ensure software meets user needs and business goals.
+This repository documents the process of **Requirement Analysis** in the software development lifecycle (SDLC).  
+It focuses on a case study of a **Booking Management System**, highlighting how structured requirements provide a strong foundation for project success.  
+
+---
+
+## What is Requirement Analysis?
+Requirement Analysis is the process of identifying, documenting, and managing the needs and expectations of stakeholders for a software system.  
+It ensures that the system being developed aligns with user needs, business goals, and technical feasibility.  
+
+Key points:
+- It bridges the gap between stakeholders and developers.  
+- It reduces project risks by clarifying expectations early.  
+- It serves as the foundation for design, development, and testing.  
+
+---
+
 ## Why is Requirement Analysis Important?
-Requirement Analysis is a critical step in the **Software Development Life Cycle (SDLC)** because it ensures the system being developed truly addresses the needs of its users and stakeholders. Key reasons include:
-
-1. **Avoids Miscommunication**  
-   Clear requirements reduce misunderstandings between clients, developers, and stakeholders.  
-
-2. **Saves Time and Cost**  
-   Identifying problems early prevents expensive fixes later in the development cycle.  
-
-3. **Improves Quality**  
-   Well-defined requirements ensure the final product meets user expectations and business goals.  
+1. **Clarity of Goals** – Ensures all stakeholders share a common understanding of system objectives.  
+2. **Risk Reduction** – Identifies challenges and constraints early, minimizing costly rework later.  
+3. **Improved Quality** – Leads to software that better satisfies user needs and business goals.  
 
 ---
 
 ## Key Activities in Requirement Analysis
-Requirement Analysis involves several key activities that help transform vague user needs into clear, actionable requirements:
-
-- **Requirement Gathering**  
-  Collecting initial requirements from stakeholders through interviews, surveys, and observation.  
-
-- **Requirement Elicitation**  
-  Engaging with users and stakeholders to deeply understand their needs and constraints.  
-
-- **Requirement Documentation**  
-  Writing down the requirements in a clear, structured format for reference.  
-
-- **Requirement Analysis and Modeling**  
-  Breaking down requirements into logical models such as use cases, diagrams, or workflows.  
-
-- **Requirement Validation**  
-  Confirming that documented requirements are correct, complete, and agreed upon by stakeholders.  
+- **Requirement Gathering** – Collecting needs from stakeholders through interviews, surveys, and research.  
+- **Requirement Elicitation** – Engaging stakeholders to draw out hidden or unclear requirements.  
+- **Requirement Documentation** – Recording requirements in a structured, accessible format.  
+- **Requirement Analysis and Modeling** – Breaking down and visualizing requirements to ensure feasibility.  
+- **Requirement Validation** – Checking that requirements are complete, consistent, and aligned with business needs.  
 
 ---
 
 ## Types of Requirements
 
 ### Functional Requirements
-Functional requirements define **what the system should do**.  
-They describe features and functions the system must support.  
+These describe **what the system should do**.  
+Examples for the Booking Management System:  
+- Users can create and manage bookings.  
+- The system sends confirmation emails upon booking.  
+- Admins can add, edit, or remove listings.  
 
-**Example (Booking Management System):**
-- Users should be able to **search for available rooms**.  
-- The system should allow **customers to book and cancel reservations**.  
-- Admin should be able to **add, edit, and delete room details**.  
-
-### Non-Functional Requirements
-Non-functional requirements define **how the system should perform** rather than specific features.  
-They describe quality attributes, constraints, and performance requirements.  
-
-**Example (Booking Management System):**
-- The system should respond to booking requests within **2 seconds**.  
-- The application should be available **24/7 with 99.9% uptime**.  
-- All sensitive user data (like payment info) should be **encrypted**.  
+### Non-functional Requirements
+These describe **how the system performs**.  
+Examples:  
+- The system should load booking results in under 2 seconds.  
+- It must support at least 1,000 concurrent users.  
+- The interface should be mobile-responsive.  
 
 ---
 
 ## Use Case Diagrams
-**Use Case Diagrams** visually represent the interactions between **actors** (users or systems) and the system itself.  
-They help in:  
-- Understanding user roles and their interactions with the system.  
-- Communicating system functionality at a high level.  
-- Identifying missing requirements.  
+Use Case Diagrams show the **interactions between system actors and use cases**, providing a visual overview of functionality.  
 
-### Booking Management System Use Case Diagram
-Actors:  
-- **Customer** (books and cancels reservations, makes payments).  
-- **Admin** (manages rooms, views reports).  
-- **Payment Gateway** (handles checkout process).  
+Benefits:  
+- Simple and intuitive visualization of system scope.  
+- Helps identify key user interactions.  
+- Clarifies system boundaries and responsibilities.  
 
-![Booking System Use Case Diagram](alx-booking-uc.png)  
+### Booking System Use Case Diagram
+![Booking Use Case Diagram](alx-booking-uc.png)
+<img width="3840" height="854" alt="alx-booking-uc" src="https://github.com/user-attachments/assets/d58e73fa-8bcc-4343-96a7-9c26731cd04c" />
+
 
 ---
 
 ## Acceptance Criteria
-**Acceptance Criteria** define the conditions that a software feature must satisfy to be accepted by stakeholders.  
+Acceptance Criteria define the **conditions a feature must meet** to be considered complete and accepted by stakeholders.  
 
-### Importance
-- Provides a clear definition of “done.”  
-- Ensures developers, testers, and stakeholders share the same expectations.  
-- Reduces ambiguity and improves testability.  
+Importance:  
+- Ensures features meet user and business needs.  
+- Provides measurable, testable benchmarks.  
+- Prevents misunderstandings between developers and clients.  
 
-### Example (Checkout Feature in Booking System)
-**Feature:** Checkout after booking  
-**Acceptance Criteria:**  
-- User must be able to review booking details before payment.  
-- System must integrate with the payment gateway to process transactions.  
-- Successful payment should generate a confirmation receipt emailed to the user.  
-- If payment fails, the system should show an error and allow retry.  
+**Example – Checkout Feature:**  
+- User can select a booking and proceed to checkout.  
+- System displays booking summary, total cost, and payment options.  
+- Payment must be processed securely.  
+- Confirmation email must be sent to the user after successful payment.  
 
 ---
-
-## Manual Check
-- Repository is named **requirement-analysis**.  
-- `README.md` is created with all mandatory sections.  
-- Use case diagram file `alx-booking-uc.png` is linked in README.
