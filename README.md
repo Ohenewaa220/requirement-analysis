@@ -60,7 +60,6 @@ Benefits:
 - Clarifies system boundaries and responsibilities.  
 
 ### Booking System Use Case Diagram
-![Booking Use Case Diagram](alx-booking-uc.png)
 <img width="3840" height="854" alt="alx-booking-uc" src="https://github.com/user-attachments/assets/d58e73fa-8bcc-4343-96a7-9c26731cd04c" />
 
 
